@@ -1,0 +1,77 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.anaTasiyici {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 700px;
+}
+
+.menuTasiyici {
+}
+
+.ustMenu {
+    padding: 20px 0px;
+}
+
+    .ustMenu h2 {
+        font-family: Cooper;
+        font-weight: 900;
+    }
+
+.anaMenu {
+    padding: 20px 0px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+    .anaMenu ul {
+        list-style-type: none;
+    }
+
+        .anaMenu ul a {
+            color: darkgreen;
+        }
+
+            .anaMenu ul a:hover {
+                color: #25154d;
+                text-decoration: underline;
+            }
+
+        .anaMenu ul li {
+            float: left;
+            padding-right: 12px;
+        }
+
+.altTasiyici {
+    padding-top: 20px;
+}
+
+.icerikTasiyici {
+    width: 1020px;
+    padding-right: 20px;
+    float: left;
+}
+
+.solalanTasiyici {
+    width: 160px;
+    float: right;
+}
+
+.not {
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    min-height: 270px;
+}

@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="BuyuNot.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BüyüNot App</title>
+    <link href="Css/arayüz.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="anaTasiyici">
+            <div class="menuTasiyici">
+                <div class="ustMenu">
+                    <img src="sayfaResimleri/206fa6021af9494ba01289583d753aea.png" />
+                </div>
+                <div class="anaMenu">
+                    <ul>
+                        <asp:Repeater ID="rp_kategoriler" runat="server">
+                            <ItemTemplate>
+                                <a href="#">
+                                    <li><%# Eval("Isim") %></li>
+                                </a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            <div class="altTasiyici">
+                <div class="iceriktasiyici">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="solalanTasiyici">
+                    <a href="https://tr.linkedin.com/company/eskisehir-bilisim-egitim-merkezi">
+                        <img src="reklam/reklam.png" />
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
