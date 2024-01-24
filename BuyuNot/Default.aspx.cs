@@ -16,6 +16,7 @@ namespace BuyuNot
             rp_Notlar.DataSource = dv.NotListele();
             rp_Notlar.DataBind();
 
+
         }
     }
 }

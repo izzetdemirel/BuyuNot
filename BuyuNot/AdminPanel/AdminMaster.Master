@@ -41,15 +41,13 @@
                     <a href="NotEkle.aspx">
                         <li>Not Ekle</li>
                     </a>
-                    <a href="">
+                    <a href="YorumListele.aspx">
                         <li>Yorumlar</li>
                     </a>
-                    <a href="">
+                    <a href="UyeListele.aspx">
                         <li>Üyeler</li>
                     </a>
-                    <a href="">
-                        <li>Kullanıcılar</li>
-                    </a>
+                    
                 </ul>
             </div>
             <div class="icerik">

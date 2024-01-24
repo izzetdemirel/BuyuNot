@@ -15,6 +15,23 @@ namespace BuyuNot
         {
             rp_kategoriler.DataSource = dv.KategoriListele(true);
             rp_kategoriler.DataBind();
+
+        }
+
+        protected void lbtn_uyegiris_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtn_kayitol_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtn_cikis_Click(object sender, EventArgs e)
+        {
+            Session["uye"] = null;
+            Response.Redirect("Default.aspx");
         }
     }
 }

@@ -15,6 +15,14 @@
             <div class="menuTasiyici">
                 <div class="ustMenu">
                     <img src="sayfaResimleri/206fa6021af9494ba01289583d753aea.png" />
+                    <asp:LinkButton ID="lbtn_uyegiris" runat="server"  OnClick="lbtn_uyegiris_Click"><a href="UyeGiris.aspx" Style="float:right; margin-right:20px; margin-left:40; text-decoration:none; color:gray;">Giriş Yap</a></asp:LinkButton>
+
+
+                    <asp:LinkButton ID="lbtn_kayitol" runat="server"  OnClick="lbtn_kayitol_Click"><a href="KayitOl.aspx" Style="float:right; margin-right:20px; margin-left:40px; text-decoration:none; color:gray">Kayıt Ol</a></asp:LinkButton>
+
+
+                    <asp:LinkButton ID="lbtn_cikis" runat="server"  Style="float:right; margin-right:20px; margin-left:40px; text-decoration:none; color:gray" OnClick="lbtn_cikis_Click" >Çıkış</asp:LinkButton>
+                    <div style="clear:both"></div>
                 </div>
                 <div class="anaMenu">
                     <ul>

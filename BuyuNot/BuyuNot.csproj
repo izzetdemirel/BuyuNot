@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPanel\AdminPanelGiris.aspx" />
+    <Content Include="AdminPanel\AktifUyeler.aspx" />
     <Content Include="AdminPanel\Anasayfa.aspx" />
     <Content Include="AdminPanel\css\AdminGirisPanel.css" />
     <Content Include="AdminPanel\css\Liste.css" />
@@ -78,6 +79,8 @@
     <Content Include="AdminPanel\NotDüzenle.aspx" />
     <Content Include="AdminPanel\NotEkle.aspx" />
     <Content Include="AdminPanel\NotListe.aspx" />
+    <Content Include="AdminPanel\OnaylananYorum.aspx" />
+    <Content Include="AdminPanel\PasifUyeler.aspx" />
     <Content Include="AdminPanel\Plugin\ckeditor\adapters\jquery.js" />
     <Content Include="AdminPanel\Plugin\ckeditor\build-config.js" />
     <Content Include="AdminPanel\Plugin\ckeditor\ckeditor.js" />
@@ -323,16 +326,23 @@
     <Content Include="AdminPanel\Plugin\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="AdminPanel\Plugin\ckeditor\styles.js" />
     <Content Include="AdminPanel\Plugin\ckeditor\vendor\promise.js" />
+    <Content Include="AdminPanel\ReddedilenYorumlar.aspx" />
+    <Content Include="AdminPanel\Resimler\accept.png" />
+    <Content Include="AdminPanel\Resimler\ban.png" />
     <Content Include="AdminPanel\Resimler\castle-4661_256.gif" />
     <Content Include="AdminPanel\Resimler\delete.png" />
     <Content Include="AdminPanel\Resimler\edit.png" />
     <Content Include="AdminPanel\Resimler\recycle.png" />
+    <Content Include="AdminPanel\UyeListele.aspx" />
+    <Content Include="AdminPanel\YorumListele.aspx" />
     <Content Include="Css\arayüz.css" />
     <Content Include="Css\NotIcerik.css" />
     <Content Include="Default.aspx" />
+    <Content Include="KayitOl.aspx" />
     <Content Include="NotIcerik.aspx" />
     <Content Include="reklam\reklam.png" />
     <Content Include="sayfaResimleri\206fa6021af9494ba01289583d753aea.png" />
+    <Content Include="UyeGiris.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -349,6 +359,13 @@
     </Compile>
     <Compile Include="AdminPanel\AdminPanelGiris.aspx.designer.cs">
       <DependentUpon>AdminPanelGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AktifUyeler.aspx.cs">
+      <DependentUpon>AktifUyeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AktifUyeler.aspx.designer.cs">
+      <DependentUpon>AktifUyeler.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\Anasayfa.aspx.cs">
       <DependentUpon>Anasayfa.aspx</DependentUpon>
@@ -399,12 +416,54 @@
     <Compile Include="AdminPanel\NotListe.aspx.designer.cs">
       <DependentUpon>NotListe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\OnaylananYorum.aspx.cs">
+      <DependentUpon>OnaylananYorum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\OnaylananYorum.aspx.designer.cs">
+      <DependentUpon>OnaylananYorum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\PasifUyeler.aspx.cs">
+      <DependentUpon>PasifUyeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\PasifUyeler.aspx.designer.cs">
+      <DependentUpon>PasifUyeler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ReddedilenYorumlar.aspx.cs">
+      <DependentUpon>ReddedilenYorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ReddedilenYorumlar.aspx.designer.cs">
+      <DependentUpon>ReddedilenYorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\UyeListele.aspx.cs">
+      <DependentUpon>UyeListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\UyeListele.aspx.designer.cs">
+      <DependentUpon>UyeListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListele.aspx.cs">
+      <DependentUpon>YorumListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListele.aspx.designer.cs">
+      <DependentUpon>YorumListele.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.aspx.cs">
+      <DependentUpon>KayitOl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KayitOl.aspx.designer.cs">
+      <DependentUpon>KayitOl.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -421,6 +480,13 @@
       <DependentUpon>NotIcerik.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeGiris.aspx.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeGiris.aspx.designer.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPanel\AdminMaster.Master" />

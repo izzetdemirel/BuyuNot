@@ -146,7 +146,9 @@
     <Compile Include="Kategori.cs" />
     <Compile Include="Notlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uye.cs" />
     <Compile Include="Yonetici.cs" />
+    <Compile Include="Yorum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -75,3 +75,100 @@ body {
     float: left;
     min-height: 270px;
 }
+
+.yorumPanel {
+    float:left;
+    margin-top: 5px;
+    padding: 10px;
+    height: 10px;
+}
+
+.forminput {
+    float: right;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 20px;
+}
+
+.formbutton {
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    background-color: #00635A;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.paylasilmadi {
+    background-color: red;
+    width: 110px;
+    font-size: 15pt;
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.paylasildi {
+    background-color: #00E3CC;
+    width: 110px;
+    font-size: 15pt;
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.yorumuye {
+    background-color: #00E3CC;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+}
+
+.yorum {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.yorumbaslik {
+    background-color: #00E3CC;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+}
+
+.girisyok {
+    margin-top: 10px;
+    padding: 20px;
+    color: darkorange;
+    border: 2px solid red;
+}
+
+    .girisyok a {
+        color: blue;
+        text-decoration: none;
+    }
+
+        .girisyok a:hover {
+            color: orangered;
+            text-decoration: underline;
+        }
+
+.girisvar {
+    padding: 20px;
+}
+
+    .girisvar .forminput {
+        margin-bottom: 10px;
+        width: 97%;
+    }
+
+    .girisvar .formbutton {
+        margin-top: 10px;
+        float: none !important;
+        padding: 10px 20px !important;
+    }
+
+.yorumicerik {
+    border: 1px solid black;
+}

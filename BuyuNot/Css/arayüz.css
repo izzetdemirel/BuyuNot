@@ -102,3 +102,60 @@ body {
     float: left;
     min-height: 500px;
 }
+
+.kayitFormu {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.kayit {
+    padding: 25px;
+}
+
+.input {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #ededed;
+    border: none;
+}
+.don {
+    text-decoration: none;
+    margin-top: 500px;
+    color: black;
+}
+.basarili {
+    background-color: #00E3CC;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.basarisiz {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 300px;
+    margin-left: 40px;
+}
+.loginbutton {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #00E3CC;
+    padding: 20px 100px;
+    margin-top: 100px;
+    color: white;
+}
