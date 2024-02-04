@@ -307,6 +307,41 @@ namespace DataAccessLayer
             finally { con.Close(); }
         }
 
+        public List<Notlar> NotListele(int kid)
+        {
+            try
+            {
+                List<Notlar> Not = new List<Notlar>();
+                cmd.CommandText = "SELECT N.ID, N.Kategori_ID, K.Isim, N.Yazar_ID, Y.KullaniciAdi, N.Baslik, N.Ozet, N.Icerik, N.EklenmeTarih, N.Durum FROM Notlar AS N JOIN Kategoriler AS K ON N.Kategori_ID = K.ID JOIN Yoneticiler AS Y ON N.Yazar_ID = Y.ID";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@kategori_ID", kid);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Notlar nt = new Notlar();
+                    nt.ID = reader.GetInt32(0);
+                    nt.Kategori_ID = reader.GetInt32(1);
+                    nt.Kategori = reader.GetString(2);
+                    nt.Yazar_ID = reader.GetInt32(3);
+                    nt.Yazar = reader.GetString(4);
+                    nt.Baslik = reader.GetString(5);
+                    nt.Ozet = !reader.IsDBNull(6) ? reader.GetString(6) : "";
+                    nt.Icerik = reader.GetString(7);
+                    nt.EklenmeTarih = reader.GetDateTime(8);
+                    nt.Durum = reader.GetBoolean(9);
+                    Not.Add(nt);
+                }
+                return Not;
+
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+
         public Notlar NotGetir(int id)
         {
             try

@@ -16,7 +16,7 @@ namespace BuyuNot
             if(Request.QueryString.Count != 0)
             {
                 int id = Convert.ToInt32(Request.QueryString["nid"]);
-                rp_Notlar.DataSource = dv.NotListele();
+                rp_Notlar.DataSource = dv.NotListele(id);
                 rp_Notlar.DataBind();
 
                 rp_yorumlar.DataSource = dv.YorumListele();
